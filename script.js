@@ -11,10 +11,9 @@ const bands = [
 function render(bands) {
   const container = document.getElementById("music");
   container.innerHTML = "";
-
+  let backgroundColor;
   for (let i = 0; i < bands.length; i++) {
     const band = bands[i];
-    let backgroundColor;
 
     if (band.active) {
       backgroundColor = "green";
