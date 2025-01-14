@@ -23,10 +23,10 @@ function render(bands) {
 
     const card = `<div class="card" style="background-color: ${backgroundColor}"width: 18rem;">
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">${bands.Name}</li>
-    <li class="list-group-item">${bands.Genre}</li>
-    <li class="list-group-item"> ${bands.yearFormed}</li>
-    <li class = "active-true-false">${bands.active}
+    <li class="list-group-item">${band.Name}</li>
+    <li class="list-group-item">${band.Genre}</li>
+    <li class="list-group-item"> ${band.yearFormed}</li>
+    <li class = "active-true-false">${band.active}
   </ul>
 </div>`;
 
