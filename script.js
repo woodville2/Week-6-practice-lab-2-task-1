@@ -12,15 +12,14 @@ function render(bands) {
   const container = document.getElementById("music");
   container.innerHTML = "";
 
-  for (let i = 0; i < bands.length; i++) 
-{
+  for (let i = 0; i < bands.length; i++) {
     const band = bands[i];
     let backgroundColor;
 
     if (band.active) {
-      backgroundColor = green;
+      backgroundColor = "green";
     } else {
-      backgroundColor = red;
+      backgroundColor = "red";
     }
   }
   const card = `<div class="card" style="background-color: ${backgroundColor}"width: 18rem;">
@@ -33,6 +32,6 @@ function render(bands) {
 </div>`;
 
   container.innerHTML += card;
-   }
-  
+}
+
 render(bands);
