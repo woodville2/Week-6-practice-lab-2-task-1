@@ -20,8 +20,8 @@ function render(bands) {
     } else {
       backgroundColor = "red";
     }
-  }
-  const card = `<div class="card" style="background-color: ${backgroundColor}"width: 18rem;">
+
+    const card = `<div class="card" style="background-color: ${backgroundColor}"width: 18rem;">
   <ul class="list-group list-group-flush">
     <li class="list-group-item">${bands.Name}</li>
     <li class="list-group-item">${bands.Genre}</li>
@@ -30,7 +30,7 @@ function render(bands) {
   </ul>
 </div>`;
 
-  container.innerHTML += card;
+    container.innerHTML += card;
+  }
 }
-
 render(bands);
