@@ -21,7 +21,7 @@ function render(bands) {
       backgroundColor = "red";
     }
 
-    const card = `<div class="card" style="background-color: ${backgroundColor}"width: 18rem;">
+    const card = `<div class="card" style="background-color: ${backgroundColor}"width: 22rem;">
   <ul class="list-group -flush - list-unstyled">
     <li class="list-group-item">${band.Name}</li>
     <li class="list-group-item">${band.Genre}</li>
