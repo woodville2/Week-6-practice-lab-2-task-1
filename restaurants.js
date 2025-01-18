@@ -16,14 +16,11 @@ const myFood = [
 ];
 
 function render(myFood) {
-  const container = document.getElementById("food");
-  container.innerHTML = "";
+  let card = "";
   for (let i = 0; i < myFood.length; i++) {
     const myFoods = myFood[i];
-  }
-}
 
-const card = `<div class="card" style="background-color: ${backgroundColor}"width: 18rem;">
+    let card = `<div class="card" style= "color:yellow" "width: 18rem;">
   <ul class="list-group -flush - list-unstyled">
     <li class="list-group-item">${myFood.Name}</li>
     <li class="list-group-item">${myFood.cuisine}</li>
@@ -31,6 +28,8 @@ const card = `<div class="card" style="background-color: ${backgroundColor}"widt
     <li class = "active-true-false">${myFood.rating}
   </ul>
 </div>`;
+  }
+}
 
-container.innerHTML += card;
+document.getElementById("myFood").innerHTML += card;
 render(myFood);
