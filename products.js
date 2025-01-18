@@ -1,20 +1,20 @@
 "use strict";
 
 const products = [
-  { Name: "Orange Juice", category: "Juice", Price: 3.99, instock: true },
-  { Name: "Bacon", category: "Meat", price: 6.99, instock: true },
-  { Name: "Greek Yogurt", category: "Dairy", price: 4.99, instock: false },
+  { Name: "Orange Juice", category: "Juice", Price: 3.99, available: true },
+  { Name: "Bacon", category: "Meat", price: 6.99, available: true },
+  { Name: "Greek Yogurt", category: "Dairy", price: 4.99, available: false },
 ];
 
 function render(products) {
   for (let i = 0; i < products.length; index++) {
-    let instock = "";
+    let available = "";
     const product = products[i];
 
-    if (product.instock) {
-      instock = "Product available";
+    if (product.available) {
+      available = "Product available";
     } else {
-      instock = "Product not available";
+      available = "Product not available";
     }
   }
 }
@@ -24,10 +24,9 @@ card = `<div class="card" style="width: 18rem;">
     <h5 class="card-title">${products.Name}</h5>
     <p class="card-text">${products.category}</p>
     <p class="card-text">${products.price}</p>
-    <p class="card-text">${instock}</p>
+    <p class="card-text">${available}</p>
   </div>
 </div>`;
 document.getElementById("foodShopping").innerHTML += card;
-}
-}
+
 render(products);
