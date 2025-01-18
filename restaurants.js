@@ -20,7 +20,7 @@ function render(myFood) {
   for (let i = 0; i < myFood.length; i++) {
     const myFoods = myFood[i];
 
-    let card = `<div class="card" style= "color:yellow" "width: 18rem;">
+    card = `<div class="card" style= "color:yellow" "width: 18rem;">
   <ul class="list-group -flush - list-unstyled">
     <li class="list-group-item">${myFood.Name}</li>
     <li class="list-group-item">${myFood.cuisine}</li>
@@ -29,7 +29,7 @@ function render(myFood) {
   </ul>
 </div>`;
   }
+  document.getElementById("food").innerHTML += card;
 }
 
-document.getElementById("food").innerHTML += card;
 render(myFood);
