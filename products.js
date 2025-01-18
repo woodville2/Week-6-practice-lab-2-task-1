@@ -43,9 +43,9 @@ function render(products) {
   <img src= "${product.image}" class = "card-img-top" alt="${product.Name}">
   <div class="card-body">
     <h5 class="card-title">${product.Name}</h5>
-    <p class="card-text">${product.category}</p>
-    <p class="card-text">${product.price}</p>
-    <p class="card-text">${available}</p>
+    <p class="card-text"> Category: ${product.category}</p>
+    <p class="card-text">Price: ${product.price}</p>
+    <p class="card-text">Availability: ${available}</p>
   </div>
 </div>`;
     document.getElementById("foodShopping").innerHTML += card;
