@@ -28,8 +28,8 @@ function render(myFood) {
     <li class = "active-true-false">${myFood.rating}
   </ul>
 </div>`;
+    document.getElementById("food").innerHTML += card;
   }
-  document.getElementById("food").innerHTML += card;
 }
 
 render(myFood);
