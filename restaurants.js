@@ -31,5 +31,5 @@ function render(myFood) {
   }
 }
 
-document.getElementById("myFood").innerHTML += card;
+document.getElementById("food").innerHTML += card;
 render(myFood);
